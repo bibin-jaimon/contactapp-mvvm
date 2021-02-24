@@ -53,7 +53,7 @@ class CoreDataManager {
         saveContext()
     }
     
-    private func getFetchRequestEntity<T: NSManagedObject>(describing objectType: T.Type) ->
+    func getFetchRequestEntity<T: NSManagedObject>(describing objectType: T.Type) ->
     NSFetchRequest<NSFetchRequestResult> {
         let entityName = String(describing: objectType)
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)

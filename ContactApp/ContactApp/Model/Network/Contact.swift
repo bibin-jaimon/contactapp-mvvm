@@ -13,7 +13,6 @@ struct Contact: Decodable {
     var email: String
     
     var company: String
-    
     var street: String
     var city: String
     var zip: Int

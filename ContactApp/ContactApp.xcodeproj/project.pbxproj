@@ -20,7 +20,6 @@
 		EF67842225821959003D6F28 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67842125821959003D6F28 /* Contact.swift */; };
 		EF67842825821C3F003D6F28 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67842725821C3F003D6F28 /* NetworkManager.swift */; };
 		EF67844525822060003D6F28 /* Persons+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67844325822060003D6F28 /* Persons+CoreDataClass.swift */; };
-		EF67844625822060003D6F28 /* Persons+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67844425822060003D6F28 /* Persons+CoreDataProperties.swift */; };
 		EF67844E258225EA003D6F28 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67844D258225E9003D6F28 /* DetailsViewController.swift */; };
 		EF67845325822961003D6F28 /* PrimaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67845225822961003D6F28 /* PrimaryTableViewCell.swift */; };
 		EF67845825822989003D6F28 /* SecondaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67845725822989003D6F28 /* SecondaryTableViewCell.swift */; };
@@ -30,6 +29,7 @@
 		EFBDF0FC25E4BD09000D9DEF /* ContactsListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDF0FB25E4BD09000D9DEF /* ContactsListViewModelProtocol.swift */; };
 		EFBDF10525E4BD31000D9DEF /* ContactsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDF10425E4BD31000D9DEF /* ContactsListViewModel.swift */; };
 		EFBDF10A25E4C991000D9DEF /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDF10925E4C991000D9DEF /* Observable.swift */; };
+		EFBDF11225E51215000D9DEF /* Persons+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDF11125E51215000D9DEF /* Persons+CoreDataProperties.swift */; };
 		EFEB65192584F97800A42D73 /* APIRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEB65182584F97800A42D73 /* APIRoutes.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +70,6 @@
 		EF67842125821959003D6F28 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		EF67842725821C3F003D6F28 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EF67844325822060003D6F28 /* Persons+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Persons+CoreDataClass.swift"; path = "ContactApp/Model/CoreData/Persons+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		EF67844425822060003D6F28 /* Persons+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Persons+CoreDataProperties.swift"; path = "ContactApp/Model/CoreData/Persons+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		EF67844D258225E9003D6F28 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		EF67845225822961003D6F28 /* PrimaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTableViewCell.swift; sourceTree = "<group>"; };
 		EF67845725822989003D6F28 /* SecondaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryTableViewCell.swift; sourceTree = "<group>"; };
@@ -80,6 +79,7 @@
 		EFBDF0FB25E4BD09000D9DEF /* ContactsListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewModelProtocol.swift; sourceTree = "<group>"; };
 		EFBDF10425E4BD31000D9DEF /* ContactsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewModel.swift; sourceTree = "<group>"; };
 		EFBDF10925E4C991000D9DEF /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		EFBDF11125E51215000D9DEF /* Persons+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Persons+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		EFEB65182584F97800A42D73 /* APIRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRoutes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,10 +131,10 @@
 		EF6783D1258215E1003D6F28 /* ContactApp */ = {
 			isa = PBXGroup;
 			children = (
-				EFBDF0F925E4B67A000D9DEF /* ViewModel */,
 				EF6783D2258215E1003D6F28 /* AppDelegate.swift */,
 				EF6783D4258215E1003D6F28 /* SceneDelegate.swift */,
 				EFEB650A2584E5BC00A42D73 /* Extensions */,
+				EFBDF0F925E4B67A000D9DEF /* ViewModel */,
 				EF67842625821C27003D6F28 /* Managers */,
 				EF678409258215FC003D6F28 /* Controller */,
 				EFEB65172584F8F600A42D73 /* APIService */,
@@ -242,8 +242,8 @@
 		EFEB65132584E8BF00A42D73 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				EFBDF11125E51215000D9DEF /* Persons+CoreDataProperties.swift */,
 				EF67844325822060003D6F28 /* Persons+CoreDataClass.swift */,
-				EF67844425822060003D6F28 /* Persons+CoreDataProperties.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -397,12 +397,12 @@
 				EFEB65192584F97800A42D73 /* APIRoutes.swift in Sources */,
 				EFBDF10525E4BD31000D9DEF /* ContactsListViewModel.swift in Sources */,
 				EF6784742582A065003D6F28 /* URLSession+Ext.swift in Sources */,
+				EFBDF11225E51215000D9DEF /* Persons+CoreDataProperties.swift in Sources */,
 				EF67844525822060003D6F28 /* Persons+CoreDataClass.swift in Sources */,
 				EF67846F258299CB003D6F28 /* CoreDataManager.swift in Sources */,
 				EF6783D3258215E1003D6F28 /* AppDelegate.swift in Sources */,
 				EF67841D258218C5003D6F28 /* PersonTableViewCell.swift in Sources */,
 				EF6783D5258215E1003D6F28 /* SceneDelegate.swift in Sources */,
-				EF67844625822060003D6F28 /* Persons+CoreDataProperties.swift in Sources */,
 				EF67844E258225EA003D6F28 /* DetailsViewController.swift in Sources */,
 				EFBDF0FC25E4BD09000D9DEF /* ContactsListViewModelProtocol.swift in Sources */,
 			);

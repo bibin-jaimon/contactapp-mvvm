@@ -2,7 +2,7 @@
 //  Persons+CoreDataProperties.swift
 //  ContactApp
 //
-//  Created by Bibin Jaimon on 12/12/20.
+//  Created by Bibin Jaimon on 23/02/21.
 //
 //
 
@@ -25,6 +25,7 @@ extension Persons {
     @NSManaged public var phone: String?
     @NSManaged public var street: String?
     @NSManaged public var zip: Double
+    @NSManaged public var sectionName: String?
 
 }
 
